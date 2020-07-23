@@ -46,7 +46,6 @@ Pod::Spec.new do |s|
   s.subspec "MapboxCoreNavigation" do |spec|
     spec.source_files = "MapboxCoreNavigation"
     spec.dependency "MapboxNavigationNative", "~> 6.2.1"
-    spec.dependency "MapboxDirections.swift", "~> 0.30.0"    
     spec.dependency "MapboxMobileEvents", "~> 0.9.5"         
     spec.dependency "Turf", "~> 0.3.0"                     
   end
