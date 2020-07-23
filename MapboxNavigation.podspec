@@ -43,6 +43,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "MapboxNavigation"
 
+  s.subspec "MapboxCoreNavigation" do |spec|
+    spec.source_files = "MapboxCoreNavigation"
+    spec.dependency "MapboxNavigationNative", "~> 6.2.1"
+    spec.dependency "MapboxDirections.swift", "~> 0.30.0"    
+    spec.dependency "MapboxMobileEvents", "~> 0.9.5"         
+    spec.dependency "Turf", "~> 0.3.0"                     
+  end
+
   s.dependency "Mapbox-iOS-SDK", "= 5.5.1"
   s.dependency "Solar", "~> 2.1"
   s.dependency "MapboxSpeech", "~> 0.1.0"
